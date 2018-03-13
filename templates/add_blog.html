@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-    <textarea></textarea>
+    <form method="post">
+        {% csrf_token %}
+        标题：<input type='text' name="title"/><br>
+        <textarea>
+        </textarea>
+    </form>
+    <input type='submit' value="提交"/>
 {% endblock %}

@@ -10,3 +10,7 @@ def blog(request,blog_id):
 
 def test(request):
     return render(request,template_name='test.html')
+
+
+def addblog(request):
+    return render(request, template_name='add_blog.html')
